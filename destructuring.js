@@ -68,7 +68,7 @@ function totalPopulation(obj){
 console.log(totalPopulation(obj))
 
 
-////////// PROBLEM 4 //////////
+////////// PROBLEM 4 (Need Help) //////////
 
 /*
   Write a function called ingredients that will take in an object. 
@@ -79,7 +79,19 @@ console.log(totalPopulation(obj))
 */
 
 //Code Here
+// let obj = {
+//   carb: "a lot",
+//   fat: "high",
+//   protein: "not enough"
+// }
+// function ingredients (obj){
+//   let newArr = [];
+//   const {carb, fat, protein} = obj;
+//   newArr.push(carb, fat, protein);
+//   return newArr;
+// }
 
+// ingredients(obj)
 
 
 ////////// PROBLEM 5 //////////
@@ -97,7 +109,17 @@ console.log(totalPopulation(obj))
 */
 
 //Code Here
+// let obj = {
+//   first: 1,
+//   second: 2,
+//   third: 3
+// }
 
+// function largeNumbers ( {first, second, third}) {
+//   return one + two + third;
+// }
+
+// largeNumbers(obj)
 
 
 ////////// PROBLEM 6 //////////
