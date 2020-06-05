@@ -55,14 +55,15 @@ function greeting( obj ) {
 */
 
 //Code Here
-let obj = {
-  utah: 1,
-  california: 2, 
-  texas: 3, 
-  arizona: 4
-}
-const {utah, california, texas, arizona} = obj;
+// let obj = {
+//   utah: 1,
+//   california: 2, 
+//   texas: 3, 
+//   arizona: 4
+// }
+
 function totalPopulation(obj){
+  const {utah, california, texas, arizona} = obj;
   return utah + california + texas + arizona;
 }
 console.log(totalPopulation(obj))
@@ -84,12 +85,12 @@ console.log(totalPopulation(obj))
 //   fat: "high",
 //   protein: "not enough"
 // }
-// function ingredients (obj){
-//   let newArr = [];
-//   const {carb, fat, protein} = obj;
-//   newArr.push(carb, fat, protein);
-//   return newArr;
-// }
+function ingredients (obj){
+  let newArr = [];
+  const {carb, fat, protein} = obj;
+  newArr.push(carb, fat, protein);
+  return newArr;
+}
 
 // ingredients(obj)
 
@@ -110,16 +111,20 @@ console.log(totalPopulation(obj))
 
 //Code Here
 // let obj = {
-//   first: 1,
-//   second: 2,
+//   first: 2,
+//   second: 1,
 //   third: 3
 // }
-
-// function largeNumbers ( {first, second, third}) {
-//   return one + two + third;
-// }
-
-// largeNumbers(obj)
+// let {first, second, third} = obj;
+function largeNumbers ( {first, second, third} ) {
+  if (first < second && first < third){
+    return first;
+    } else if (second < first && second < third){
+      return second;
+        }else {
+          } return third;
+}
+// largeNumbers(first, second, third)
 
 
 ////////// PROBLEM 6 //////////
@@ -131,5 +136,14 @@ console.log(totalPopulation(obj))
 */
 
 //Code Here
+function numberGroups( {a,b,c} ){
+  if (a.length > b.length && a.length > c.length) {
+    return a;
+  } else if (b.length > a.length && b.length > c.length) {
+    return b;
+  } else {
+    return c;
+  }
 
+}
 
