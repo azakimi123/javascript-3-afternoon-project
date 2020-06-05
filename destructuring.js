@@ -55,7 +55,17 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+let obj = {
+  utah: 1,
+  california: 2, 
+  texas: 3, 
+  arizona: 4
+}
+const {utah, california, texas, arizona} = obj;
+function totalPopulation(obj){
+  return utah + california + texas + arizona;
+}
+console.log(totalPopulation(obj))
 
 
 ////////// PROBLEM 4 //////////
