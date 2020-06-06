@@ -6,7 +6,7 @@
   You can refresh the page at any time to re-run all the tests.
 */
 
-////////// PROBLEM 1 //////////
+////////// PROBLEM 1 (NEED HELP)//////////
 
 // Do not edit the code below.
 var employees = [
@@ -52,9 +52,22 @@ var employees = [
 
 //Code Here
 
+// function employeeUpdater(){
+//   for (let i = 0; i < employees.length; i++){
+//     for (let key in employees[i]) {
+//       if(employees[i] === "firstName" && employees[i][key] === "Theo" ) {
+//         delete employees[i];
+//       }
+//       else if(employees[i] === "firstName" && employees[i][key] === "Lorie" ) {
+//         employees[i]["department"] = "HR";
+//       }
+//     }
+//   }
+//   return employees;
+// }
 
 
-////////// PROBLEM 2 //////////
+////////// PROBLEM 2 (NEED HELP)//////////
 
 // Do not edit the code below.
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
@@ -69,7 +82,28 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
+// function removeDuplicates(){
+//   for (let i = 0; i < workplaceAccidents.length; i++){
+//     for (let j = i + 1; i < workplaceAccidents.length; j++) {
+//       if (workplaceAccidents[i] === workplaceAccidents[j]) {
+//         delete workplaceAccidents.workplaceAccidents[i];
+//       }
+//     }
+//   }
+//   return workplaceAccidents;
+// }
+// function removeDuplicates (){
+//   let index = ;
+//   for (let i=0; i < workplaceAccidents.length; i++){
+//     for (let j = i + 1; j < workplaceAccidents.length; j++){
+//       if (workplaceAccidents[i] === workplaceAccidents[j]) {
+//         index = workplaceAccidents.indexOf(workplaceAccidents[j]);
+//         workplaceAccidents.splice(index, 1);
+//       }
+//     }
+//   }
+//   return workplaceAccidents;
+// }
 
 
 ////////// PROBLEM 3 //////////
@@ -97,8 +131,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
