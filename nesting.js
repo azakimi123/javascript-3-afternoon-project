@@ -52,7 +52,15 @@ var employees = [
 
 //Code Here
 
-// function employeeUpdater(){
+// Attempt 1 = function employeeUpdater () {
+//   for (let key in employees) {
+//     if (employees[key]["firstName"] === "Theo") {
+//       delete employees[key];
+//     }
+//     return employees;
+//   }
+// }
+// Attemp 2 = function employeeUpdater(){
 //   for (let i = 0; i < employees.length; i++){
 //     for (let key in employees[i]) {
 //       if(employees[i] === "firstName" && employees[i][key] === "Theo" ) {
@@ -136,6 +144,7 @@ var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
+
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -173,7 +182,13 @@ var myCar = {
 */
 
 //Code Here
+function recordCleaner(){
+  for (let key in myCar.accidents) {
+      myCar.accidents[key]["atFaultForAccident"] = false;
 
+  }
+  return myCar;
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -192,5 +207,12 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
+function looper(){
+  for (let i = 0; i < numsArr.length; i++) {
+    for (let j = 0; j < numsArr.length; j++) {
+      
+    }
+  }
 
+}
 
