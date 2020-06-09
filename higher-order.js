@@ -106,7 +106,7 @@ let myStrongest = monstersInYourPocket.filter(function(strong) {
 
 
 
-////////// PROBLEM 5 (NEED HELP)//////////
+////////// PROBLEM 5 //////////
 
 // Do not edit code below.
 const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
@@ -131,7 +131,7 @@ let orderTotals = orders.map(function(price) {
 
 
 
-////////// PROBLEM 6 //////////
+////////// PROBLEM 6 (NEED HELP)//////////
 
 // Do not edit the code below.
 const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
