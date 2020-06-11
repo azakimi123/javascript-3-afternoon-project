@@ -52,27 +52,18 @@ var employees = [
 
 //Code Here
 
-// Attempt 1 = function employeeUpdater () {
-//   for (let key in employees) {
-//     if (employees[key]["firstName"] === "Theo") {
-//       delete employees[key];
-//     }
-//     return employees;
-//   }
-// }
-// Attemp 2 = function employeeUpdater(){
-//   for (let i = 0; i < employees.length; i++){
-//     for (let key in employees[i]) {
-//       if(employees[i] === "firstName" && employees[i][key] === "Theo" ) {
-//         delete employees[i];
-//       }
-//       else if(employees[i] === "firstName" && employees[i][key] === "Lorie" ) {
-//         employees[i]["department"] = "HR";
-//       }
-//     }
-//   }
-//   return employees;
-// }
+function employeeUpdater () {
+  for (let i = 0; i < employees.length; i++) {
+    // console.log(employees[i].firstName)
+    if (employees[i].firstName === "Theo") {
+      let index = employees.indexOf(employees[i]);
+      employees.splice(index, 1)
+    } else if (employees[i].firstName === "Lorie") {
+      employees[i].department = "HR";
+    }
+  }
+  return employees;
+}
 
 
 ////////// PROBLEM 2 (NEED HELP on Jasmine)//////////
@@ -119,6 +110,7 @@ function removeDuplicates (){
   }
   return newArr;
 }
+
 
 
 ////////// PROBLEM 3 //////////
