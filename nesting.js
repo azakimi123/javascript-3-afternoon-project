@@ -75,7 +75,7 @@ var employees = [
 // }
 
 
-////////// PROBLEM 2 (NEED HELP)//////////
+////////// PROBLEM 2 (NEED HELP on Jasmine)//////////
 
 // Do not edit the code below.
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
@@ -100,18 +100,25 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 //   }
 //   return workplaceAccidents;
 // }
-// function removeDuplicates (){
-//   let index = ;
-//   for (let i=0; i < workplaceAccidents.length; i++){
-//     for (let j = i + 1; j < workplaceAccidents.length; j++){
-//       if (workplaceAccidents[i] === workplaceAccidents[j]) {
-//         index = workplaceAccidents.indexOf(workplaceAccidents[j]);
-//         workplaceAccidents.splice(index, 1);
-//       }
-//     }
-//   }
-//   return workplaceAccidents;
-// }
+function removeDuplicates (){
+  let newArr = [];
+  for (let i=0; i < workplaceAccidents.length; i++){
+    for (let j = i + 1; j < workplaceAccidents.length; j++){
+      console.log(workplaceAccidents[i], workplaceAccidents[j])
+      if (workplaceAccidents[i] === workplaceAccidents[j]) {
+       workplaceAccidents.splice(j,1);
+       newArr = workplaceAccidents;
+      } for (let k = 0; k < newArr.length; k++) {
+        for (let l = k + 1; l < newArr.length; l++) {
+          if (newArr[k] === newArr[l]) {
+            newArr.splice(k, 1);
+          }
+        }
+      }
+    }
+  }
+  return newArr;
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -209,10 +216,15 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 //Code Here
 function looper(){
   for (let i = 0; i < numsArr.length; i++) {
-    for (let j = 0; j < numsArr.length; j++) {
-      
+    for (let j = 0; j < numsArr[i].length; j++) {
+      console.log(numsArr[i][j])
+      if (numsArr[i][j] % 2 === 1 || numsArr[i][j] === 1) {
+        numsArr[i][j] = 'odd';
+      } if (numsArr[i][j] % 2 === 0) {
+        numsArr[i][j] = 'even';
+      }
     }
   }
-
+  return numsArr;
 }
 
