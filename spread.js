@@ -44,8 +44,8 @@ function addNums(num1, num2, num3) {
 }
 
 // code here
-let result = [...numbers];
-addNums(result[0],result[1], result[2])
+
+let result = addNums(...numbers);
 
 ////////// PROBLEM 4 //////////
 
