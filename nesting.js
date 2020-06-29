@@ -66,7 +66,7 @@ function employeeUpdater () {
 }
 
 
-////////// PROBLEM 2 (NEED HELP on Jasmine)//////////
+////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
@@ -91,14 +91,14 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 //   }
 //   return workplaceAccidents;
 // }
-function removeDuplicates (){
+function removeDuplicates (arr){
   let newArr = [];
-  for (let i=0; i < workplaceAccidents.length; i++){
-    for (let j = i + 1; j < workplaceAccidents.length; j++){
-      console.log(workplaceAccidents[i], workplaceAccidents[j])
-      if (workplaceAccidents[i] === workplaceAccidents[j]) {
-       workplaceAccidents.splice(j,1);
-       newArr = workplaceAccidents;
+  for (let i=0; i < arr.length; i++){
+    for (let j = i + 1; j < arr.length; j++){
+      console.log(arr[i], arr[j])
+      if (arr[i] === arr[j]) {
+       arr.splice(j,1);
+       newArr = arr;
       } for (let k = 0; k < newArr.length; k++) {
         for (let l = k + 1; l < newArr.length; l++) {
           if (newArr[k] === newArr[l]) {
@@ -111,7 +111,7 @@ function removeDuplicates (){
   return newArr;
 }
 
-
+// removeDuplicates(workplaceAccidents);
 
 ////////// PROBLEM 3 //////////
 
